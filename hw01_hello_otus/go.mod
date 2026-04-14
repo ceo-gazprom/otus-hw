@@ -1,4 +1,4 @@
-module github.com/fixme_my_friend/hw01_hello_otus
+module github.com/ceo-gazprom/otus_hw
 
 go 1.23
 
