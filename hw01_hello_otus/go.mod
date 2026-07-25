@@ -1,4 +1,4 @@
-module github.com/ceo-gazprom/otus_hw
+module github.com/ceo-gazprom/otus-hw/hw01_hello_otus
 
 go 1.23
 
