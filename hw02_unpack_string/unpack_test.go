@@ -45,3 +45,27 @@ func TestUnpackInvalidString(t *testing.T) {
 		})
 	}
 }
+
+// Тесты для хэлпера
+func TestIsDigt(t *testing.T) {
+	testTable := []struct {
+		num    rune
+		result bool
+	}{
+		{'1', true},
+		{'.', false},
+		{'-', false},
+		{'a', false},
+	}
+
+	for _, testCase := range testTable {
+		result := IsDigit(testCase.num)
+
+		if result != testCase.result {
+			t.Errorf(
+				"Ошибка (%q) = %v, а должно быть %v",
+				testCase.num, result, testCase.result,
+			)
+		}
+	}
+}
